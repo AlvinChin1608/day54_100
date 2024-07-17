@@ -107,7 +107,7 @@ Django and Flask are both frameworks. The key difference between a library and a
 #slow_function run speed: 0.6154699325561523s
 ```
 
-    This example helped me understand how to measure the execution time of functions using decorators.
+This example helped me understand how to measure the execution time of functions using decorators.
 
 ### Popular Terminal Commands
 
