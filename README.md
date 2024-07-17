@@ -37,12 +37,11 @@ def hello():
 def say_bye():
     return "bye"
 
-
-
 #Some thing but we don't to type the export FLASK_APP=hello.py
 #and the flask run in terminal to start the server and manually end it using ctrl+c
 if __name__ =="__main__":
     app.run()
+
 ```
 
     In this example, I learned how to set up a basic Flask application with routes that respond to different URLs.
