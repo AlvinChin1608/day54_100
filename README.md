@@ -77,7 +77,7 @@ Django and Flask are both frameworks. The key difference between a library and a
     I learned how functions can be passed as arguments, nested within other functions, and how decorators can enhance their behavior.
 
 2. **Measuring Function Execution Time with Decorators:**
-    ```python
+ ```python
     import time
 
     def speed_calc_decorator(function):
@@ -101,11 +101,11 @@ Django and Flask are both frameworks. The key difference between a library and a
     fast_function()
     slow_function()
 
-    # Output:
-# 1721213261.574354
-# fast_function run speed: 0.07558703422546387s
-# slow_function run speed: 0.6154699325561523s
-    ```
+#Output:
+#1721213261.574354
+#fast_function run speed: 0.07558703422546387s
+#slow_function run speed: 0.6154699325561523s
+```
 
     This example helped me understand how to measure the execution time of functions using decorators.
 
