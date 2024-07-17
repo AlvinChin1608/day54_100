@@ -21,18 +21,26 @@ Flask is a lightweight and flexible web framework for Python. It allows develope
     ```python
     from flask import Flask
 
-    app = Flask(__name__)
+app = Flask(__name__)
 
-    @app.route("/")
-    def hello():
-        return "Hello, World!"
+"""The @app.route("/") is called Python Decorator
+Basically, functions that would give additional functionalities to a function
 
-    @app.route("/bye")
-    def say_bye():
-        return "bye"
+Head over to the explain_file.py for better explanation"""
 
-    if __name__ == "__main__":
-        app.run()
+@app.route("/")
+def hello():
+    return "Hello, World!"
+
+# if somebody goes to the URL /bye, this trigger
+@app.route("/bye")
+def say_bye():
+    return "bye"
+
+"""Some thing but we don't to type the export FLASK_APP=hello.py
+and the flask run in terminal to start the server and manually end it using ctrl+c"""
+if __name__ =="__main__":
+    app.run()
     ```
 
     In this example, I learned how to set up a basic Flask application with routes that respond to different URLs.
@@ -41,6 +49,8 @@ Flask is a lightweight and flexible web framework for Python. It allows develope
     Decorators in Flask, such as `@app.route("/")`, are used to add additional functionality to functions. I also explored how decorators work in general Python functions.
 
 ### Libraries vs. Frameworks
+
+Django and Flask are both frameworks. The key difference between a library and a framework lies in how they are used:
 
 - **Library:** A collection of pre-written code that developers can use to optimize tasks. Libraries offer specific functionalities, such as data manipulation or making HTTP requests.
 - **Framework:** A comprehensive tool that provides a structure for building applications. Frameworks include libraries, but they also enforce a particular way to design and structure an application.
@@ -88,6 +98,11 @@ Flask is a lightweight and flexible web framework for Python. It allows develope
 
     fast_function()
     slow_function()
+
+    # Output:
+# 1721213261.574354
+# fast_function run speed: 0.07558703422546387s
+# slow_function run speed: 0.6154699325561523s
     ```
 
     This example helped me understand how to measure the execution time of functions using decorators.
